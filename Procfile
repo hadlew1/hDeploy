@@ -1,1 +1,3 @@
-web: gunicorn InventorySys.wsgi --log-file -
+web: gunicorn InventorySys.wsgi:application --log-file - --log-level debug
+python manage.py collectstatic --noinput
+manage.py migrate
