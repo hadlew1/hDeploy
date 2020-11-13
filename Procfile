@@ -1,1 +1,1 @@
-web: gunicorn InventorySys.wsgi:application --log-file - --log-level debug
+web: gunicorn InventorySys.wsgi --log-file - --log-level debug
