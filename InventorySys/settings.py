@@ -138,7 +138,7 @@ STATIC_URL = '/static/'
 STATIC_ROOT = posixpath.join(*(BASE_DIR.split(os.path.sep) + ['static']))
 
 CORS_ORIGIN_WHITELIST = [
-    'http://localhost','*'
+    'http://localhost','https://nameless-reef-19020.herokuapp.com/',
  ]
  # Heroku: Update database configuration from $DATABASE_URL.
 import dj_database_url
