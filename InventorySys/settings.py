@@ -97,11 +97,11 @@ DATABASES = {
 
         'USER': 'lewgoalie',
 
-        'PASSWORD': 'SoftwareEngineering2020!',
+        #'PASSWORD': 'SoftwareEngineering2020!',
 
-        'HOST': 'database-experiment.cxotbs795jjq.us-east-2.rds.amazonaws.com',
+        #'HOST': 'database-experiment.cxotbs795jjq.us-east-2.rds.amazonaws.com',
 
-        'PORT': '9997',
+        #'PORT': '9997',
 
     }
 
