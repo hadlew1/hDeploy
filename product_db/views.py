@@ -10,3 +10,8 @@ class productList(generics.ListCreateAPIView):
 class productDetail(generics.RetrieveUpdateDestroyAPIView):
     queryset = product.objects.all()
     serializer_class = productSerializer
+class productByName(generics.ListCreateAPIView):
+    serializer_class= productSerializer
+    def get_queryset(self):
+        queryset=product.objects.filter(product_name__icontains=self.kwargs['name'])
+        return queryset
